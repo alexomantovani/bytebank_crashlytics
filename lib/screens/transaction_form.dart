@@ -111,6 +111,7 @@ class _TransactionFormState extends State<TransactionForm> {
       password,
       context,
     );
+    // ignore: use_build_context_synchronously
     _showSuccessfulMessage(transaction, context);
   }
 
@@ -122,6 +123,7 @@ class _TransactionFormState extends State<TransactionForm> {
           return const SuccessDialog('Successful transaction');
         },
       );
+      // ignore: use_build_context_synchronously
       Navigator.pop(context);
     }
   }
